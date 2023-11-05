@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
         //register the phone receiver with the intent filter
         registerReceiver(phoneCallReceiver, intentFilter);
     }
+
     private class PhoneCallReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
